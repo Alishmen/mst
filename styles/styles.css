@@ -1,0 +1,354 @@
+
+.container {
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 61px; 
+    font-size: 20px;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    background-color: var(--section-color);
+}
+
+.logo {
+    font-size: 36px;
+    color: var(--ligt-color);
+}
+
+.btn {
+    background-color: var(--ligt-color);
+    font-size: 20px;
+    color: var(--primary-color);
+    padding: 30px 52px;
+    text-transform: uppercase;
+    font-style: italic;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--action-color);
+}
+
+/* header */
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socilas.header-socials {
+    gap: 5px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 29px;
+}
+
+.nav__list-link {
+    color: var(--ligt-color);
+    font-style: italic;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+
+.nav__list-link:hover {
+    color: var(--action-color);
+    border-bottom: 1px solid var(--action-color);
+}
+
+
+/* Section promo */
+
+.promo {
+    background-color: var(--section-color);
+    padding-bottom: 100px; 
+}
+
+.promo__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo__wrapper-text {
+    color: var(--ligt-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.promo__title {
+    font-size: 80px;
+    font-family: 'Prata';
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+.promo__text {
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 64px;
+}
+
+
+.promo__list-item {
+    position: relative;
+    font-size: 24px;
+    padding-left: 50px;
+    margin-bottom: 35px;
+}
+
+.promo__list-item::before {
+    content: ''; 
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    background-image: url(../icons/check.svg); 
+    display: block; 
+    width: 39px; 
+    height: 37px; 
+}
+
+.promo__list-item span {
+    font-size: 40px;
+    font-family: 'Prata';
+}
+
+
+.promo__wrapper-img {
+    max-width: 760px;
+    max-height: 1000px;
+}
+
+/* Pluses */
+
+.pluses {
+    color: var(--ligt-color);
+    padding-bottom: 100px;
+}
+
+.pluses__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pluses__img {
+    max-width: 524px;
+    max-height: 600px;
+}
+
+.pluses__list {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: center;
+}
+
+.pluses__list-item {  
+    position: relative;
+    padding-left: 74px;
+}
+
+.pluses__list-item::before {
+    content: ''; 
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    background-image: url(../icons/icon.svg); 
+    display: block; 
+    width: 55px; 
+    height: 47px;
+}
+
+.pluses__list-item:last-child::before{
+    display: none;
+}
+
+.pluses__list-item:last-child {
+    padding-left: 0;
+}
+
+.pluses__btn {
+    color: var(--section-color);
+    background-color: var(--ligt-color);
+    padding: 25px 180px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.pluses__btn:hover {
+    background-color: var(--action-color)
+}
+
+
+/* Form */
+
+.form {
+    padding-bottom: 100px;
+}
+
+.form__wrapper {
+    background-color: var(--ligt-color);
+    margin: 0 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__wrapper-itemText {
+    margin-left: 134px;
+    padding: 10px;
+}
+
+.form__title {
+    font-size: 54px;
+    font-family: 'Prata';
+    margin-bottom: 45px;
+    max-width: 420px;
+}
+
+.form__input {
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    padding: 14px 38px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form__checkbox {
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+.form__text {
+    display: inline-block;
+}
+
+.form__btn {
+    width: 100%;
+    background-color: var(--section-color);
+    color: var(--ligt-color);
+    padding: 32px 245px;
+    white-space: nowrap;
+    transition: all 0.5s ease;
+}
+
+.form__btn:hover {
+    background-color: var(--action-color);
+    color: var(--primary-color);
+}
+
+.form__wrapper-item {
+    margin-left: 66px;
+    position: relative;
+}
+
+.form__wrapper-item img {
+    object-fit: contain;
+}
+
+.form__wrapper-item::before {
+    content: ''; 
+    position: absolute;
+    background-image: url(../images/woman-2.png); 
+    display: block; 
+    width: 500px; 
+    height: 700px;
+    z-index: 1000;
+    top: -72px;
+    right: 82px;
+}
+
+/* Submenu */
+
+.submenu {
+    border-top: 1px solid var(--action-color);
+    border-bottom: 1px solid var(--action-color);
+}
+
+.submenu__list {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.submenu__list-link {
+    font-style: italic;
+    color: var(--ligt-color);
+    transition: all 0.5s ease;
+}
+
+.submenu__list-link:hover {
+    color: var(--action-color);
+    border-bottom: 1px solid var(--action-color);
+}
+
+/* Footer */
+
+footer {
+    margin-top: auto;
+    background: var(--primary-color);
+    padding: 43px 0 53px;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+.socilas {
+    display: flex;
+    gap: 32px;
+}
+
+.socilas-link svg:hover  {
+   fill: var(--ligt-color);
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__copyright-item {
+    color: var(--ligt-color);
+}
+
+.footer__copyright-link {
+    color: var(--action-color);
+    transition: color 0.5s ease;
+}
+
+.footer__copyright-link:hover {
+    color: var(--ligt-color);
+}
